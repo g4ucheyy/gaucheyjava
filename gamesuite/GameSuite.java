@@ -51,6 +51,66 @@ public class GameSuite {
     System.out.println("The number was " + randomNumber + "\n");
 }
 
+public static void rockPaperScissors(Scanner keyboard) {
+
+
+        
+        Random random = new Random();
+        
+        String choice[] = {"rock", "paper", "scissors"};
+        String playerChoice;
+        String cpuChoice;
+        String playAgain = "yes";
+
+        do {
+        System.out.print("Enter Your Move (rock, paper, scissors): ");
+        playerChoice = keyboard.nextLine().toLowerCase();
+
+        
+        // if input
+        while (!playerChoice.equals("rock") && !playerChoice.equals("paper") && !playerChoice.equals("scissors")) {
+            
+              System.out.println("Invalid Choice");
+            System.out.print("Enter Your Move (rock, paper, scissors): ");
+            playerChoice = keyboard.nextLine().toLowerCase();
+        }
+
+        // Computer Choice
+        cpuChoice = choice[random.nextInt(3)];
+
+        System.out.println("Computer's Choice: " + cpuChoice);
+
+        // game logic
+
+        if (playerChoice.equals(cpuChoice)) {
+
+            System.out.println("It's a tie!");
+
+        } else if (playerChoice.equals("rock") && (cpuChoice.equals("scissors")) 
+                   || playerChoice.equals("paper") && cpuChoice.equals("rock")) {
+
+            System.out.println("You win!");
+
+        } else if (playerChoice.equals("scissors") && cpuChoice.equals("paper")) {
+
+            System.out.println("You win!");
+
+        } else {
+
+            System.out.println("You lose!");
+
+        } 
+
+            System.out.print("Play again? (yes/no): ");
+
+            playAgain = keyboard.nextLine().toLowerCase();
+
+        } while (playAgain.startsWith("y"));
+
+        System.out.println("Thanks for playing!");
+        
+}
+
 // main
     public static void main(String[] args) {
 
@@ -94,10 +154,9 @@ public class GameSuite {
 
                     1.Number Guessing
                     2.Rock Paper Scissors
-                    3.TicTacToe
+                    3.Slot Machine
                     4.Coin Flip
-                    5.Math Quiz
-                    6.Go Back
+                    5.Go Back
                     
                     """);
 
@@ -108,8 +167,8 @@ public class GameSuite {
 
                     gameSelect = Integer.parseInt(input);
 
-                    if (gameSelect < 1 || gameSelect > 6) {
-                        System.out.println("Invalid Choice! Please Choose 1-6");
+                    if (gameSelect < 1 || gameSelect > 5) {
+                        System.out.println("Invalid Choice! Please Choose 1-5");
                     }
 
                    } catch (NumberFormatException e) {
@@ -127,7 +186,11 @@ public class GameSuite {
 
                     break;
 
-                    case 6:
+                    case 2:
+
+                    rockPaperScissors(keyboard);
+
+                    case 5:
 
                     continue;
 
