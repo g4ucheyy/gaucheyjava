@@ -1,4 +1,4 @@
- /*
+/*
   * Author: Faris A.K.A Fries
   * Date: 27/12/2025
   * Version: 1.0
@@ -111,7 +111,79 @@ public static void rockPaperScissors(Scanner keyboard) {
         
 }
 
-// main
+/*public static void slotMachine(Scanner keyboard) {
+
+    int balance = 100;
+    int bet;
+    int payout;
+    String row[];
+
+    System.out.println(eq());
+    System.out.println("🍒🍒🍒🍒🍒🍒🍒🍒🍒🍒🍒🍒🍒🍒🍒");
+    System.out.println("Symbols: 🍒🍉🍋🔔⭐");
+    System.out.println(eq());
+
+    */
+
+    public static void coinFlip(Scanner keyboard) {
+
+        Random random = new Random();
+
+        String playerChoice;
+        String playAgain;
+
+        System.out.println(eq() + " Coin Flip " + eq());
+
+        do {
+
+            System.out.println("Choose Head or Tails: ");
+
+            playerChoice = keyboard.nextLine().toLowerCase(); // so verbose lmao
+
+            // validate
+
+            while (!playerChoice.equals("heads") && !playerChoice.equals("tails")) {
+                     
+                System.out.println("Invalid Choice");
+                 System.out.println("Choose Head or Tails: ");
+                 playerChoice = keyboard.nextLine().toLowerCase();
+                
+
+            }
+
+            String coinResult = random.nextBoolean() ? "heads" : "tails";
+            System.out.println("Coin result: " + coinResult);
+
+            if (playerChoice.equals(coinResult)) {
+
+                System.out.println("You Win!");
+
+            } else {
+
+                System.out.println("You Lose!");
+            }
+
+            System.out.print("Play Again? (y/n): ");
+
+            playAgain = keyboard.nextLine().toLowerCase();
+
+        } while (playAgain.equals("y"));
+
+        System.out.println("Thank You For Playing!");
+
+        
+    
+}
+    
+
+
+
+
+
+     
+}
+
+//==================================================== main =============================================================================
     public static void main(String[] args) {
 
         var keyboard = new Scanner(System.in);
@@ -154,9 +226,8 @@ public static void rockPaperScissors(Scanner keyboard) {
 
                     1.Number Guessing
                     2.Rock Paper Scissors
-                    3.Slot Machine
-                    4.Coin Flip
-                    5.Go Back
+                    3.Coin Flip
+                    4.Go Back
                     
                     """);
 
@@ -167,8 +238,8 @@ public static void rockPaperScissors(Scanner keyboard) {
 
                     gameSelect = Integer.parseInt(input);
 
-                    if (gameSelect < 1 || gameSelect > 5) {
-                        System.out.println("Invalid Choice! Please Choose 1-5");
+                    if (gameSelect < 1 || gameSelect > 4) {
+                        System.out.println("Invalid Choice! Please Choose 1-4");
                     }
 
                    } catch (NumberFormatException e) {
@@ -190,7 +261,15 @@ public static void rockPaperScissors(Scanner keyboard) {
 
                     rockPaperScissors(keyboard);
 
-                    case 5:
+                    break;
+
+                    case 3:
+
+                    coinFlip(keyboard);
+
+                    break;
+
+                    case 4:
 
                     continue;
 
@@ -236,7 +315,7 @@ public static void rockPaperScissors(Scanner keyboard) {
                 }
             }
         }
-        }
+        
                 
 
             
