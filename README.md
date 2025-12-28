@@ -10,3 +10,11 @@ rewrite the source code again.
 
 27/12/2025
 
+Well the v1.0 is here! I'm looking forward for improvements and updates. The v1.0
+consisting of basic number guessing game, rock paper scissors and coin flip.
+More features are coming soon!
+
+28/12/2025
+
+
+
