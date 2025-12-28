@@ -1,4 +1,4 @@
-# gaucheyjava
+# GameSuite
 
 huh, you're here
 
