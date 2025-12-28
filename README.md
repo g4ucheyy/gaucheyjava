@@ -25,6 +25,10 @@ More features are coming soon!
 - Core games implemented: Number Guessing, Rock Paper Scissors, Coin Flip
 - Console based CLI
 
+### v1.0.1 (28/12/2025)
+- Small tweak in menu layout
+- Fixed minor text inconsistencies
+- No functional changes, all games work as in v1.0.
 
 
 
