@@ -16,7 +16,14 @@ More features are coming soon!
 
 28/12/2025
 
-# Games
+## Download
+
+### Windows
+- [Download GameSuite.exe]([https://github.com/g4ucheyy/gaucheyjava/releases/tag/v1.0])
+
+### Cross-platform (Java required)
+- [Download GameSuite.jar]([https://github.com/g4ucheyy/gaucheyjava/releases/tag/v1.0])
+
 
 Version 1.0
 
