@@ -2,7 +2,8 @@
 
 huh, you're here
 
-No, I didn't make this for my CV or portfolio or whatever. I'm simply killing time whenever I'm bored.
+No, I didn't make this for my CV or portfolio or whatever. I'm simply killing time when I'm bored 
+(and curious).
 Uhhh what else should I write here? Ah yes, you might been wondering why its written in java? 
 Well, why not? Give me a break, I'll code in python soon enough. 
 Nevermind, I've figured. I'm currently code in linux (PopOs), I can easily compile with java without
