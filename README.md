@@ -16,9 +16,7 @@ More features are coming soon!
 
 28/12/2025
 
-## Download
-
-### Downloads
+## Downloads
 
 - [Go to Releases](https://github.com/g4ucheyy/gaucheyjava/releases)
 
