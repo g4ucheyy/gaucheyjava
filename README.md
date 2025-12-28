@@ -19,13 +19,13 @@ More features are coming soon!
 ## Download
 
 ### Windows
-- [Download GameSuite.exe]([https://github.com/g4ucheyy/gaucheyjava/releases/tag/v1.0])
+- [Download GameSuite.exe]([https://github.com/g4ucheyy/gaucheyjava/releases])
 
 ### Cross-platform (Java required)
-- [Download GameSuite.jar]([https://github.com/g4ucheyy/gaucheyjava/releases/tag/v1.0])
+- [Download GameSuite.jar]([https://github.com/g4ucheyy/gaucheyjava/releases])
 
 
-Version 1.0
+
 
 
 
