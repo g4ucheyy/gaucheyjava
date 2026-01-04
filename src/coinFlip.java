@@ -1,3 +1,4 @@
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -15,6 +16,7 @@ public class coinFlip {
         System.out.println(utils.eq() + " Coin Flip " + utils.eq());
 
         do {
+            utils.clearScreen();
             System.out.println("Choose Head or Tails: ");
             System.out.print("> ");
             playerChoice = keyboard.nextLine().toLowerCase();

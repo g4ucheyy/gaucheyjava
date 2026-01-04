@@ -12,6 +12,7 @@ public static void play(Scanner keyboard) {
         System.out.println("Welcome to the guessing game v2.0!");
 
         while (guessedNumber != randomNumber) {
+            utils.clearScreen();
             System.out.print("Enter a number between 1 to 100: ");
             String input = keyboard.nextLine();
 
