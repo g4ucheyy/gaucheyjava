@@ -17,8 +17,10 @@ public class GameSuite {
         int gameSelect = 0;
 
         while (true) {
+           
 
             do {
+                
                 System.out.println(utils.eq() + " GameSuite " + utils.eq());
                 System.out.println("""
                         1.Play
@@ -50,7 +52,8 @@ public class GameSuite {
                             1.Number Guessing
                             2.Rock Paper Scissors
                             3.Coin Flip
-                            4.Go Back
+                            4.Slot Machine
+                            5.Go Back
                             """);
 
                     System.out.print("> ");
@@ -67,7 +70,8 @@ public class GameSuite {
                         case 1 -> numberGuessing.play(keyboard);
                         case 2 -> rockPaperScissors.play(keyboard);
                         case 3 -> coinFlip.play(keyboard);
-                        case 4 -> {}
+                        case 4 -> slotMachine.play(keyboard);
+                        case 5 -> {}
                     }
                     break;
 
@@ -83,7 +87,7 @@ public class GameSuite {
                     try {
 
                         for (int i = 0; i < 3; i++) {
-                            Thread.sleep(700);
+                            Thread.sleep(500);
                             System.out.print(".");
                         }
                         System.out.println();
