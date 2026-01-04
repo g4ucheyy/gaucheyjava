@@ -18,7 +18,7 @@ public class slotMachine {
         System.out.println(utils.logeq());
 
        while (balance > 0) {
-        utils.clearScreen();
+      
 
         System.out.print("Enter Your Bet (Place 0 To Quit): ");
 
