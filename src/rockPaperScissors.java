@@ -14,7 +14,7 @@ public class rockPaperScissors {
         String playAgain = "yes";
 
         do {
-            utils.clearScreen();
+          
             System.out.print("Enter Your Move (rock, paper, scissors): ");
             playerChoice = keyboard.nextLine().toLowerCase();
 
