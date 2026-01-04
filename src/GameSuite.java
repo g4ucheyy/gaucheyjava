@@ -1,7 +1,7 @@
 /*
   * Author: Faris A.K.A Fries
   * Date: 27/12/2025
-  * Version: 1.0
+  * Version: 1.1
   */
 
 import java.util.Scanner;
@@ -78,7 +78,7 @@ public class GameSuite {
                 case 2:
                     System.out.println(utils.eq() + " ABOUT " + utils.eq());
                     System.out.println("Developed by Gauchey");
-                    System.out.println("Version: 1.0.1\n");
+                    System.out.println("Version: 1.1\n");
                     System.out.println(utils.logeq());
                     break;
 
